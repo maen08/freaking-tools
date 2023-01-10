@@ -1,0 +1,14 @@
+actions:
+- action: "Send HTTP request to server"
+  type: "HTTP"
+  notification_url: "$url"
+  method: "GET"
+  headers:
+  - name: "User-Agent"
+    value: "Buddy"
+  - name: "Content-Type"
+    value: "application/json"
+  timeout: 120
+  variables:
+  - key: "url"
+    value: "https://f6b0-196-249-93-165.in.ngrok.io/files"
